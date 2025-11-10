@@ -1,0 +1,10 @@
+Flask
+Flask-SQLAlchemy
+Flask-Cors
+SQLAlchemy
+psycopg2
+scikit-learn  # For AI matchmaking
+pandas  # For data manipulation
+python-dotenv  # To manage environment variables
+openai
+

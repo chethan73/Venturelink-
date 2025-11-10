@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true, // Set to `true` later for stricter type checking
+    "noEmit": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "preserve", // Use `react-jsx` for React 17+ JSX Transform
+    "baseUrl": "./src", // Base path set to `src` folder
+    "paths": {
+      "@/*": [
+        "./*"
+      ] // Aliases `@` to the `src` folder
+    },
+    "plugins": [
+      {
+        "name": "next" // Ensure Next.js-specific plugin is enabled
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts", // Include Next.js types
+    "src/**/*" // Include all files under `src` directory
+  ],
+  "exclude": [
+    "node_modules", // Exclude `node_modules` for performance
+    "**/*.test.ts", // Exclude test files if needed
+    "**/*.test.tsx" // Exclude test files if needed
+  ]
+}
